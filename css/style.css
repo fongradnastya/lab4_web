@@ -1,0 +1,21 @@
+section{
+    padding: 40px 0;
+}
+
+#nav a{
+    color: white!important;
+}
+
+#nav{
+    background: #418E97!important;
+}
+
+.header__basket{
+    display: flex;
+    color: white;
+    margin-right: 20px;
+}
+
+.basket__img{
+    margin-right: 10px;
+}
