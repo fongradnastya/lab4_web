@@ -15,11 +15,22 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Glovia Clothes - Создай свою эстетику</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="header_logo" href="#">
+          <div class="logo">
+            <img src="img/first_scrin/icon.png" alt="Glovia Clothes">
+          </div>
+          <div class="header__title">
+            <h5>
+              Glovia Clothes
+            </h5>
+            Создай свою эстетику
+          </div>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,30 +38,34 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Популярное</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О нас</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Категории товаров
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Аксессуары</a></li>
+                <li><a class="dropdown-item" href="#">Обувь</a></li>
+                <li><a class="dropdown-item" href="#">Футболки</a></li>
+                <li><a class="dropdown-item" href="#">Юбки</a></li>
+                <li><a class="dropdown-item" href="#">Платья</a></li>
+                <li><a class="dropdown-item" href="#">Брюки</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Другое</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
           </ul>
-          <a class="header__basket" href="#">
+          <a class="header__basket" href="form.html">
             <div class="basket__img">
               <img src="img/first_scrin/basket.png" alt="basket">
             </div>
@@ -59,15 +74,15 @@
             </div>
           </a>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-light" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
           </form>
         </div>
       </div>
     </nav>
   </header>
   <!--<i class="bi bi-sun"></i> Gehdfrytui<i class="bi bi-arrow-left-short"></i>-->
-  <section>
+  <section id="s1">
     <div class="container text-center">
       <!-- Stack the columns on mobile by making one full-width and the other half-width -->
       <div class="row align-items-center">
@@ -88,102 +103,221 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="s2">
     <div class="container">
+      <h2>Популярное</h2>
       <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
               <div class="col">
-                <div class="card">
-                  <img src="img/popular/1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Юбка мини голубая
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/1.png" alt="Юбка">
                   </div>
-                </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1299 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <img src="img/popular/1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Брюки клёш белые
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/2.png" alt="Юбка">
                   </div>
-                </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1500 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <img src="img/popular/1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Топ вязанный с принтом
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/3.png" alt="Юбка">
                   </div>
-                </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1199 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <img src="img/popular/1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Купальник “Нежность”
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/4.png" alt="Юбка">
                   </div>
-                </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          2250 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
               </div>
               <div class="col">
-                <div class="card">
-                  <img src="img/popular/1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Футболка "Dreaming"
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/5.png" alt="Юбка">
                   </div>
-                </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1199 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Юбка мини голубая
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/1.png" alt="Юбка">
+                  </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1299 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+              <div class="col">
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Брюки клёш белые
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/2.png" alt="Юбка">
+                  </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1500 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+              <div class="col">
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Топ вязанный с принтом
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/3.png" alt="Юбка">
+                  </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1199 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+              <div class="col">
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Купальник “Нежность”
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/4.png" alt="Юбка">
+                  </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          2250 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
+              </div>
+              <div class="col">
+                <div class="popular__card">
+                  <h5 class="popular__subtitle">
+                      Футболка "Dreaming"
+                  </h5>
+                  <div class="popular__img">
+                      <img src="img/popular/5.png" alt="Юбка">
+                  </div>
+                  <div class="popular__info">
+                      <p class="popular__price" style="color: #FE955E;">
+                          1199 р.
+                      </p>
+                      <div class="popular__basket">
+                          <a href="#" class="popular__link">
+                              <img src="img/popular/basket.png" alt="basket">
+                          </a>
+                      </div>
+                  </div> 
+              </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="card" style="width: 18rem;">
-            <img src="img/popular/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card" style="width: 18rem;">
-            <img src="img/popular/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -193,9 +327,137 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      </div>
     </div>
     </div>
   </section>
+  <section id="s2" class="categories">
+    <div class="container">
+        <div class="categories__top">
+            <h2 class="categories__header">
+                Категории товаров
+            </h2>
+            <div class="categories__btn">
+                <a href="#" class="categories__all">
+                    Все категории
+                    
+                </a>
+                <ul class="pop-up-list">
+                    <li>
+                        <a href="#">Платья</a>
+                    </li>
+                    <li>
+                        <a href="#">Топы</a>
+                    </li>
+                    <li>
+                        <a href="#">Свитера</a>
+                    </li>
+                    <li>
+                        <a href="#">Юбки</a>
+                    </li>
+                    <li>
+                        <a href="#">Аксессуары</a>
+                    </li>
+                    <li>
+                        <a href="#">Обувь</a>
+                    </li>
+                    <li>
+                        <a href="#">Брюки</a>
+                    </li>
+                    <li>
+                        <a href="#">Худи</a>
+                    </li>
+                    <li>
+                        <a href="#">Футболки</a>
+                    </li>
+                    <li>
+                        <a href="#">Рубашки</a>
+                    </li>
+                    <li>
+                        <a href="#">Костюмы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="categories__list">
+            <div class="categories__column">
+                <div class="categories__category">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Аксессуары
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/glasses.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+                <div class="categories__category categories__tshirt">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Футболки
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/tshirt.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="categories__column">
+                <div class="categories__category categories__shoes">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Обувь
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/boots.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+                <div class="categories__category">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Юбки
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/skirt.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="categories__column">
+                <div class="categories__category categories__trousers">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Брюки
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/trousers.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="categories__column">
+                <div class="categories__category">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Платья
+                        </div>
+                        <div class="categories__img">
+                            <img src="img/categories/dress.png" alt="Sun glasses">
+                        </div>
+                    </a>
+                </div>
+                <div class="categories__category categories__other">
+                    <a href="#" class="categories__link">
+                        <div class="categories__title">
+                            Другое
+                        </div>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
   <section>
     <div class="container">
       <h2>Размерная сетка женской одежды</h2>
@@ -214,7 +476,7 @@
             <th scope="row">S</th>
             <td>44</td>
             <td>
-              <164< /td>
+              <164</td>
             <td>88</td>
             <td>96</td>
           </tr>
@@ -243,6 +505,31 @@
       </table>
     </div>
   </section>
+  <footer>
+    <div class="container footer__container">
+      <div class="footer__logo">
+        <div class="footer__img">
+          <img src="img/footer/logo.png" alt="logo">
+        </div>
+        <div class="footer__text">
+          <div class="footer__title">
+            Glovia Clothes
+          </div>
+          <div class="footer__subtitle">
+            Создай свою эстетику
+          </div>
+        </div>
+      </div>
+      <div class="footer__number">
+        +7(926)-342-56-91
+      </div>
+      <div class="footer__arrow">
+        <a href="#" class="footer__link">
+          <img src="img/footer/arrow.png" alt="arrow">
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="js/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
